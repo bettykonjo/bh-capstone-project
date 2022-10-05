@@ -5,7 +5,7 @@ const OrderSchema = new mongoose.Schema({
     products: [
         {
             productId:{
-                type:string,
+                type:String,
             },
             quantity:{
                 type:Number,
@@ -13,9 +13,9 @@ const OrderSchema = new mongoose.Schema({
             },
         },
     ],
-    amount: { type:String, require: true },
-    adress: { type: object, require: true},
-    status: { type: string, default: "pending"},
+    amount: { type:Number, require: true },
+    adress: { type: Object, require: true},
+    status: { type: String, default: "pending"},
 },
 { timestamps: true}
 );
