@@ -16,8 +16,8 @@ dotenv.config();
 mongoose
   .connect(process.env.MONGO_URL)
   .then(() => console.log("Db connection sucssessful"))
-  .catch((errer) => {
-    console.log(errer);
+  .catch((error) => {
+    console.log(error);
   });
 
 // create our end point
