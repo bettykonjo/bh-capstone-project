@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import CartPage from './pages/cart/cart-page';
 import Checkout from './pages/cart/checkout';
@@ -116,6 +117,17 @@ const App = () => {
       <Toaster position='top-center' reverseOrder={false} />
     </Router>
   );
+=======
+import Product from "./pages/Product";
+import Home from "./pages/Home";
+import ProductList from "./pages/ProductList";
+import Register from "./pages/Register";
+import Login from "./pages/Login";
+// import Cart from "./pages/Cart";
+
+const App = () => {
+  return <Home/>;
+>>>>>>> ee60097a18468751daf7207b5f1776bb6e2e0d81
 };
 
 export default App;
